@@ -25,3 +25,21 @@ CRITICAL - 2022-03-09 01:23:26 --> syntax error, unexpected ':', expecting ']'
 #7 C:\xampp7\htdocs\JWT-CodeIgniter-4\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #8 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp7\\htdoc...')
 #9 {main}
+CRITICAL - 2022-03-09 02:30:30 --> Class 'App\Controllers\JWT' not found
+#0 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Checkin->index()
+#1 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Checkin))
+#2 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp7\htdocs\JWT-CodeIgniter-4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp7\\htdoc...')
+#5 {main}
+ERROR - 2022-03-09 03:03:11 --> Unknown column 'location.id' in 'on clause'
+ERROR - 2022-03-09 03:03:46 --> Unknown column 'location.id' in 'on clause'
+ERROR - 2022-03-09 03:04:52 --> Unknown column 'location.id' in 'on clause'
+CRITICAL - 2022-03-09 03:04:52 --> Cannot access protected property mysqli_sql_exception::$message
+#0 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Checkin->index()
+#1 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Checkin))
+#2 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp7\htdocs\JWT-CodeIgniter-4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp7\\htdoc...')
+#5 {main}
+ERROR - 2022-03-09 03:05:19 --> Unknown column 'location.id' in 'on clause'
