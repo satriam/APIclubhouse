@@ -1,0 +1,48 @@
+ERROR - 2022-04-03 02:55:19 --> Error connecting to the database: No connection could be made because the target machine actively refused it.
+
+CRITICAL - 2022-04-03 02:55:19 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+#0 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 C:\xampp7\htdocs\JWT-CodeIgniter-4\app\Controllers\Login.php(34): CodeIgniter\BaseModel->first()
+#5 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Login->index()
+#6 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp7\htdocs\JWT-CodeIgniter-4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp7\\htdoc...')
+#10 {main}
+ERROR - 2022-04-03 02:59:27 --> Error connecting to the database: No connection could be made because the target machine actively refused it.
+
+CRITICAL - 2022-04-03 02:59:27 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+#0 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 C:\xampp7\htdocs\JWT-CodeIgniter-4\app\Controllers\Login.php(34): CodeIgniter\BaseModel->first()
+#5 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Login->index()
+#6 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp7\htdocs\JWT-CodeIgniter-4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp7\\htdoc...')
+#10 {main}
+ERROR - 2022-04-03 03:03:42 --> Error connecting to the database: No connection could be made because the target machine actively refused it.
+
+CRITICAL - 2022-04-03 03:03:42 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+#0 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 C:\xampp7\htdocs\JWT-CodeIgniter-4\app\Controllers\Login.php(32): CodeIgniter\BaseModel->first()
+#5 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Login->index()
+#6 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp7\htdocs\JWT-CodeIgniter-4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp7\\htdoc...')
+#10 {main}

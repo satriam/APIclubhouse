@@ -1,0 +1,8 @@
+CRITICAL - 2022-04-08 01:37:47 --> Undefined offset: 2
+#0 C:\xampp7\htdocs\JWT-CodeIgniter-4\app\Controllers\Me.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\xampp7\\htdoc...', 23, Array)
+#1 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Me->index()
+#2 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Me))
+#3 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp7\htdocs\JWT-CodeIgniter-4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp7\\htdoc...')
+#6 {main}

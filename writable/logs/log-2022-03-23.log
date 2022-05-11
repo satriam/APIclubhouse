@@ -1,0 +1,8 @@
+CRITICAL - 2022-03-23 05:11:13 --> Call to undefined function CodeIgniter\locale_set_default()
+#0 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#1 C:\xampp7\htdocs\JWT-CodeIgniter-4\public\index.php(28): require('C:\\xampp7\\htdoc...')
+#2 {main}
+CRITICAL - 2022-03-23 05:11:28 --> Call to undefined function CodeIgniter\locale_set_default()
+#0 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#1 C:\xampp7\htdocs\JWT-CodeIgniter-4\public\index.php(28): require('C:\\xampp7\\htdoc...')
+#2 {main}

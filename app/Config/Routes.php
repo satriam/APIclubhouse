@@ -37,6 +37,8 @@ $routes->post('register', 'Register::index');
 $routes->post('login', 'Login::index');
 $routes->get('locations','Location::index',['filter'=>'auth']);
 $routes->get('checkin','Checkin::index',['filter'=>'auth']);
+$routes->post('checkin','Checkin::store',['filter'=>'auth']);
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing

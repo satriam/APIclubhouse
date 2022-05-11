@@ -17,12 +17,17 @@ class Login extends ResourceController
 	use ResponseTrait;
 	public function index()
 	{
+		// var_dump($this->request->getVar('email'));
+		// die;
 		helper(['form']);
 		$rules = [
 			'email' => 'required|valid_email',
 			'password' => 'required|min_length[6]'
 		];
-		if(!$this->validate($rules)) return $this->fail($this->validator->getErrors());
+		if(!$this->validate($rules)) {
+		return $this->fail($this->validator->getErrors());
+		} 
+		
 		$model = new UserModel();
 		$user = $model->where("email", $this->request->getVar('email'))->first();
 		if(!$user) return $this->failNotFound('Email Tidak Ditemukan');
@@ -35,7 +40,8 @@ class Login extends ResourceController
 			"iat" => 1356999524,
 			"nbf" => 1357000000,
 			"uid" => $user['id'],
-			"email" => $user['email']
+			"email" => $user['email'],
+			"password"=>$user['password']
 		);
 
 		$token = JWT::encode($payload, $key);
@@ -44,12 +50,8 @@ class Login extends ResourceController
 		return $this->response->setJSON([
 			"status" => 200,
 			"message" => "ok",
-			"data" => [
-				"token"=>$token,
-				"user" => [
-					"email" => $user['email'],
-				]
-			]
-		]);
+			"token"=>$token,
+			"email" => $user['email'],
+			]);
 	}
 }
