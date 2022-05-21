@@ -25,6 +25,7 @@ class Checkin extends ResourceController
             $builder->where('checkin.user_id', $decoded->uid);
             $builder->select('*');
             $builder->join('locations','locations.id=checkin.lokasi_id');
+            $builder->orderBy('created_at','DESC');
             $query= $builder->get()->getResult();
             //  var_dump($query);die;
             // var_dump($decoded);die;

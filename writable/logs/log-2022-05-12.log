@@ -1,0 +1,156 @@
+CRITICAL - 2022-05-12 02:25:45 --> Cannot declare class App\Controllers\Login, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-05-12 02:25:54 --> Cannot declare class App\Controllers\Login, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-05-12 02:26:30 --> Cannot declare class App\Controllers\Login, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-05-12 02:29:16 --> Declaration of App\Controllers\Edit::update() should be compatible with CodeIgniter\RESTful\ResourceController::update($id = NULL)
+#0 C:\xampp7\htdocs\JWT-CodeIgniter-4\app\Controllers\Edit.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Declaration of ...', 'C:\\xampp7\\htdoc...', 19, Array)
+#1 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\Router\Router.php(518): include_once('C:\\xampp7\\htdoc...')
+#2 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('Edit')
+#3 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(719): CodeIgniter\Router\Router->handle('Edit')
+#4 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#5 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp7\htdocs\JWT-CodeIgniter-4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp7\\htdoc...')
+#8 {main}
+CRITICAL - 2022-05-12 02:33:05 --> Declaration of App\Controllers\Edit::update() should be compatible with CodeIgniter\RESTful\ResourceController::update($id = NULL)
+#0 C:\xampp7\htdocs\JWT-CodeIgniter-4\app\Controllers\Users.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Declaration of ...', 'C:\\xampp7\\htdoc...', 19, Array)
+#1 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\Router\Router.php(518): include_once('C:\\xampp7\\htdoc...')
+#2 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('Users/1')
+#3 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(719): CodeIgniter\Router\Router->handle('Users/1')
+#4 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#5 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp7\htdocs\JWT-CodeIgniter-4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp7\\htdoc...')
+#8 {main}
+CRITICAL - 2022-05-12 02:34:09 --> Declaration of App\Controllers\Users::update() should be compatible with CodeIgniter\RESTful\ResourceController::update($id = NULL)
+#0 C:\xampp7\htdocs\JWT-CodeIgniter-4\app\Controllers\Users.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Declaration of ...', 'C:\\xampp7\\htdoc...', 19, Array)
+#1 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\Router\Router.php(518): include_once('C:\\xampp7\\htdoc...')
+#2 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('Users/1')
+#3 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(719): CodeIgniter\Router\Router->handle('Users/1')
+#4 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#5 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp7\htdocs\JWT-CodeIgniter-4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp7\\htdoc...')
+#8 {main}
+CRITICAL - 2022-05-12 02:34:13 --> Declaration of App\Controllers\Users::update() should be compatible with CodeIgniter\RESTful\ResourceController::update($id = NULL)
+#0 C:\xampp7\htdocs\JWT-CodeIgniter-4\app\Controllers\Users.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Declaration of ...', 'C:\\xampp7\\htdoc...', 19, Array)
+#1 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\Router\Router.php(518): include_once('C:\\xampp7\\htdoc...')
+#2 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('Users')
+#3 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(719): CodeIgniter\Router\Router->handle('Users')
+#4 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#5 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp7\htdocs\JWT-CodeIgniter-4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp7\\htdoc...')
+#8 {main}
+CRITICAL - 2022-05-12 02:39:03 --> Declaration of App\Controllers\Users::update(int $id) should be compatible with CodeIgniter\RESTful\ResourceController::update($id = NULL)
+#0 C:\xampp7\htdocs\JWT-CodeIgniter-4\app\Controllers\Users.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Declaration of ...', 'C:\\xampp7\\htdoc...', 19, Array)
+#1 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\Router\Router.php(518): include_once('C:\\xampp7\\htdoc...')
+#2 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('Users/')
+#3 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(719): CodeIgniter\Router\Router->handle('Users/')
+#4 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#5 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp7\htdocs\JWT-CodeIgniter-4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp7\\htdoc...')
+#8 {main}
+CRITICAL - 2022-05-12 02:39:10 --> Declaration of App\Controllers\Users::update(int $id) should be compatible with CodeIgniter\RESTful\ResourceController::update($id = NULL)
+#0 C:\xampp7\htdocs\JWT-CodeIgniter-4\app\Controllers\Users.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Declaration of ...', 'C:\\xampp7\\htdoc...', 19, Array)
+#1 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\Router\Router.php(518): include_once('C:\\xampp7\\htdoc...')
+#2 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('Users/1')
+#3 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(719): CodeIgniter\Router\Router->handle('Users/1')
+#4 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#5 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp7\htdocs\JWT-CodeIgniter-4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp7\\htdoc...')
+#8 {main}
+CRITICAL - 2022-05-12 02:39:16 --> Declaration of App\Controllers\Users::update(int $id) should be compatible with CodeIgniter\RESTful\ResourceController::update($id = NULL)
+#0 C:\xampp7\htdocs\JWT-CodeIgniter-4\app\Controllers\Users.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Declaration of ...', 'C:\\xampp7\\htdoc...', 19, Array)
+#1 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\Router\Router.php(518): include_once('C:\\xampp7\\htdoc...')
+#2 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('Users/2')
+#3 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(719): CodeIgniter\Router\Router->handle('Users/2')
+#4 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#5 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp7\htdocs\JWT-CodeIgniter-4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp7\\htdoc...')
+#8 {main}
+CRITICAL - 2022-05-12 02:44:10 --> Declaration of App\Controllers\Users::update($id) should be compatible with CodeIgniter\RESTful\ResourceController::update($id = NULL)
+#0 C:\xampp7\htdocs\JWT-CodeIgniter-4\app\Controllers\Users.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Declaration of ...', 'C:\\xampp7\\htdoc...', 19, Array)
+#1 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\Router\Router.php(518): include_once('C:\\xampp7\\htdoc...')
+#2 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('Users/2')
+#3 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(719): CodeIgniter\Router\Router->handle('Users/2')
+#4 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#5 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp7\htdocs\JWT-CodeIgniter-4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp7\\htdoc...')
+#8 {main}
+CRITICAL - 2022-05-12 02:45:26 --> Declaration of App\Controllers\Users::update($id) should be compatible with CodeIgniter\RESTful\ResourceController::update($id = NULL)
+#0 C:\xampp7\htdocs\JWT-CodeIgniter-4\app\Controllers\Users.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Declaration of ...', 'C:\\xampp7\\htdoc...', 19, Array)
+#1 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\Router\Router.php(518): include_once('C:\\xampp7\\htdoc...')
+#2 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('Users/2')
+#3 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(719): CodeIgniter\Router\Router->handle('Users/2')
+#4 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#5 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp7\htdocs\JWT-CodeIgniter-4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp7\\htdoc...')
+#8 {main}
+CRITICAL - 2022-05-12 02:46:24 --> Call to undefined method App\Models\UserModel::findClientById
+#0 C:\xampp7\htdocs\JWT-CodeIgniter-4\app\Controllers\Users.php(24): CodeIgniter\Model->__call('findClientById', Array)
+#1 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Users->update('2')
+#2 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp7\htdocs\JWT-CodeIgniter-4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp7\\htdoc...')
+#6 {main}
+ERROR - 2022-05-12 03:14:23 --> Table 'jsonwebtoken.mytable' doesn't exist
+ERROR - 2022-05-12 03:21:27 --> Column 'nama' cannot be null
+ERROR - 2022-05-12 03:22:03 --> Column 'nama' cannot be null
+ERROR - 2022-05-12 03:23:23 --> Unknown column 'name' in 'field list'
+ERROR - 2022-05-12 03:23:30 --> Unknown column 'name' in 'field list'
+ERROR - 2022-05-12 03:23:37 --> Unknown column 'name' in 'field list'
+ERROR - 2022-05-12 03:23:50 --> Unknown column 'name' in 'field list'
+ERROR - 2022-05-12 03:24:12 --> Column 'nama' cannot be null
+ERROR - 2022-05-12 03:25:45 --> Column 'nama' cannot be null
+ERROR - 2022-05-12 03:25:54 --> Column 'password' cannot be null
+CRITICAL - 2022-05-12 03:40:05 --> Declaration of App\Controllers\Auth::update() should be compatible with CodeIgniter\RESTful\ResourceController::update($id = NULL)
+#0 C:\xampp7\htdocs\JWT-CodeIgniter-4\app\Controllers\Auth.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Declaration of ...', 'C:\\xampp7\\htdoc...', 19, Array)
+#1 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(264): include_once('C:\\xampp7\\htdoc...')
+#2 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp7\\htdoc...')
+#3 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#5 [internal function]: spl_autoload_call('App\\Controllers...')
+#6 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(790): class_exists('\\App\\Controller...', true)
+#7 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->startController()
+#8 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp7\htdocs\JWT-CodeIgniter-4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp7\\htdoc...')
+#11 {main}
+CRITICAL - 2022-05-12 03:41:05 --> Declaration of App\Controllers\Auth::update() should be compatible with CodeIgniter\RESTful\ResourceController::update($id = NULL)
+#0 C:\xampp7\htdocs\JWT-CodeIgniter-4\app\Controllers\Auth.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Declaration of ...', 'C:\\xampp7\\htdoc...', 19, Array)
+#1 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(264): include_once('C:\\xampp7\\htdoc...')
+#2 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp7\\htdoc...')
+#3 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#5 [internal function]: spl_autoload_call('App\\Controllers...')
+#6 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(790): class_exists('\\App\\Controller...', true)
+#7 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->startController()
+#8 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp7\htdocs\JWT-CodeIgniter-4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp7\\htdoc...')
+#11 {main}
+CRITICAL - 2022-05-12 03:42:58 --> Declaration of App\Controllers\Auth::update() should be compatible with CodeIgniter\RESTful\ResourceController::update($id = NULL)
+#0 C:\xampp7\htdocs\JWT-CodeIgniter-4\app\Controllers\Auth.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Declaration of ...', 'C:\\xampp7\\htdoc...', 19, Array)
+#1 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(264): include_once('C:\\xampp7\\htdoc...')
+#2 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp7\\htdoc...')
+#3 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#5 [internal function]: spl_autoload_call('App\\Controllers...')
+#6 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(790): class_exists('\\App\\Controller...', true)
+#7 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->startController()
+#8 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp7\htdocs\JWT-CodeIgniter-4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp7\htdocs\JWT-CodeIgniter-4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp7\\htdoc...')
+#11 {main}

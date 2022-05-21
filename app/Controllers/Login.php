@@ -52,6 +52,33 @@ class Login extends ResourceController
 			"message" => "ok",
 			"token"=>$token,
 			"email" => $user['email'],
+			"role_id"=> $user['role_id']
 			]);
 	}
+
+	public function Logout()
+    {
+        $this->session->sess_destroy();
+        redirect('login');
+    }
+
+	// public function update($id = null)
+    // {
+    //     $model = new UserModel();
+    //     $id = $this->request->getVar('id');
+    //     $data = [
+    //         'nama' => $this->request->getVar('nama'),
+    //         'password'  => $this->request->getVar('password'),
+    //     ];
+    //     $model->update($id, $data);
+    //     $response = [
+    //         'status'   => 200,
+    //         'error'    => null,
+    //         'messages' => [
+    //             'success' => 'Data produk berhasil diubah.'
+    //         ]
+    //     ];
+    //     return $this->respond($response);
+    // }
+
 }

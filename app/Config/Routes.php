@@ -33,11 +33,16 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index', ['filter' => 'auth']);
+// $routes->resource('login');
 $routes->post('register', 'Register::index');
 $routes->post('login', 'Login::index');
 $routes->get('locations','Location::index',['filter'=>'auth']);
 $routes->get('checkin','Checkin::index',['filter'=>'auth']);
 $routes->post('checkin','Checkin::store',['filter'=>'auth']);
+$routes->put('users/(:num)', 'Users::update',['filter'=>'auth']);
+$routes->put('auth/personal', 'Auth::update',['filter'=>'auth']);
+// $routes->post('login', 'Login::Update', ['filter' => 'auth']);
+
 
 /*
  * --------------------------------------------------------------------
