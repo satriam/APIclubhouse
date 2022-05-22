@@ -20,6 +20,7 @@ class Checkin extends ResourceController
 		try {
             
 			$decoded = JWT::decode($token, $key, ['HS256']);
+            
             $db      = \Config\Database::connect();
             $builder = $db->table('checkin');
             $builder->where('checkin.user_id', $decoded->uid);

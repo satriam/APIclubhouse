@@ -22,10 +22,11 @@ class Me extends ResourceController
 		if(!$header) return $this->failUnauthorized('Token Required');
 		$token = explode(' ', $header)[1];
 		$User = new UserModel();
+		
 
 		try {
-			$decoded = JWT::decode($token, $key,$User ['HS256']);
-			
+			$decoded = JWT::decode($token, $key,$User['HS256']);
+			var_dump($decoded);die;
 			$response = [
 				'id' => $decoded->uid,
 				'email' => $decoded->email,
@@ -34,8 +35,10 @@ class Me extends ResourceController
 			
 			return $this->respond($response);
 		} catch (\Throwable $th) {
+			var_dump($th);die;
 			return $this->fail('Invalid Token');
 		}
 	}
+	//me masih error
 
 }
