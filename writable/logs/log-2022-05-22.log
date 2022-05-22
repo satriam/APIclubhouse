@@ -1,0 +1,48 @@
+CRITICAL - 2022-05-22 01:06:04 --> Call to a member function save() on null
+#0 C:\xampp7\htdocs\apiclubhouse\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Location->create()
+#1 C:\xampp7\htdocs\apiclubhouse\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Location))
+#2 C:\xampp7\htdocs\apiclubhouse\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp7\htdocs\apiclubhouse\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp7\htdocs\apiclubhouse\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp7\\htdoc...')
+#5 {main}
+CRITICAL - 2022-05-22 01:09:25 --> Call to a member function save() on null
+#0 C:\xampp7\htdocs\apiclubhouse\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Location->create()
+#1 C:\xampp7\htdocs\apiclubhouse\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Location))
+#2 C:\xampp7\htdocs\apiclubhouse\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp7\htdocs\apiclubhouse\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp7\htdocs\apiclubhouse\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp7\\htdoc...')
+#5 {main}
+CRITICAL - 2022-05-22 01:10:11 --> Call to a member function save() on null
+#0 C:\xampp7\htdocs\apiclubhouse\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Location->create()
+#1 C:\xampp7\htdocs\apiclubhouse\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Location))
+#2 C:\xampp7\htdocs\apiclubhouse\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp7\htdocs\apiclubhouse\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp7\htdocs\apiclubhouse\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp7\\htdoc...')
+#5 {main}
+CRITICAL - 2022-05-22 01:13:02 --> Class "App\Controllers\LocationModel" not found
+#0 C:\xampp7\htdocs\apiclubhouse\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Location->index()
+#1 C:\xampp7\htdocs\apiclubhouse\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Location))
+#2 C:\xampp7\htdocs\apiclubhouse\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp7\htdocs\apiclubhouse\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp7\htdocs\apiclubhouse\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp7\\htdoc...')
+#5 {main}
+CRITICAL - 2022-05-22 01:24:27 --> mysqli_result::fetch_object(): Argument #1 ($class) must be a valid class name, json given
+#0 C:\xampp7\htdocs\apiclubhouse\vendor\codeigniter4\framework\system\Database\MySQLi\Result.php(148): mysqli_result->fetch_object('json')
+#1 C:\xampp7\htdocs\apiclubhouse\vendor\codeigniter4\framework\system\Database\BaseResult.php(149): CodeIgniter\Database\MySQLi\Result->fetchObject('json')
+#2 C:\xampp7\htdocs\apiclubhouse\vendor\codeigniter4\framework\system\Database\BaseResult.php(106): CodeIgniter\Database\BaseResult->getCustomResultObject('json')
+#3 C:\xampp7\htdocs\apiclubhouse\vendor\codeigniter4\framework\system\Model.php(184): CodeIgniter\Database\BaseResult->getResult('json')
+#4 C:\xampp7\htdocs\apiclubhouse\vendor\codeigniter4\framework\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp7\htdocs\apiclubhouse\app\Controllers\Me.php(25): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp7\htdocs\apiclubhouse\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Me->index()
+#7 C:\xampp7\htdocs\apiclubhouse\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Me))
+#8 C:\xampp7\htdocs\apiclubhouse\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp7\htdocs\apiclubhouse\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp7\htdocs\apiclubhouse\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp7\\htdoc...')
+#11 {main}
+CRITICAL - 2022-05-22 01:25:58 --> Call to a member function orderBy() on null
+#0 C:\xampp7\htdocs\apiclubhouse\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Me->index()
+#1 C:\xampp7\htdocs\apiclubhouse\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Me))
+#2 C:\xampp7\htdocs\apiclubhouse\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp7\htdocs\apiclubhouse\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp7\htdocs\apiclubhouse\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp7\\htdoc...')
+#5 {main}

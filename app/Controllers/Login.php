@@ -45,6 +45,7 @@ class Login extends ResourceController
 		);
 
 		$token = JWT::encode($payload, $key);
+		// var_dump($token);die;
 
 		// return $this->respond($token);
 		return $this->response->setJSON([
@@ -62,23 +63,6 @@ class Login extends ResourceController
         redirect('login');
     }
 
-	// public function update($id = null)
-    // {
-    //     $model = new UserModel();
-    //     $id = $this->request->getVar('id');
-    //     $data = [
-    //         'nama' => $this->request->getVar('nama'),
-    //         'password'  => $this->request->getVar('password'),
-    //     ];
-    //     $model->update($id, $data);
-    //     $response = [
-    //         'status'   => 200,
-    //         'error'    => null,
-    //         'messages' => [
-    //             'success' => 'Data produk berhasil diubah.'
-    //         ]
-    //     ];
-    //     return $this->respond($response);
-    // }
+
 
 }
