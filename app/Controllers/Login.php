@@ -57,11 +57,11 @@ class Login extends ResourceController
 			]);
 	}
 
-	public function Logout()
-    {
-        $this->session->sess_destroy();
-        redirect('login');
-    }
+	// public function Logout()
+    // {
+    //     $this->session->sess_destroy();
+    //     redirect('login');
+    // }
 
 
 

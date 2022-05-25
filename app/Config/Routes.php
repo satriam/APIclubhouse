@@ -36,6 +36,8 @@ $routes->get('/', 'Home::index', ['filter' => 'auth']);
 $routes-> resource('auth');
 $routes-> resource('Me');
 $routes-> resource('location');
+$routes-> resource('readcheckin');
+
 $routes->put('auth','Auth::index',['filter'=>'auth']);
 // $routes->resource('login');
 $routes->post('register', 'Register::index');
@@ -43,6 +45,7 @@ $routes->post('login', 'Login::index');
 // $routes->get('location','Location::index',['filter'=>'auth']);
 // $routes->post('location','Location::create',['filter'=>'auth']);
 $routes->get('checkin','Checkin::index',['filter'=>'auth']);
+$routes->get('checkin','Checkin::indexall');
 $routes->post('checkin','Checkin::store',['filter'=>'auth']);
 
 // $routes->post('login', 'Login::Update', ['filter' => 'auth']);

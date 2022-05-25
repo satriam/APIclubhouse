@@ -20,15 +20,20 @@ class Auth extends ResourceController
     public function index()
     {
         // return $this->respond($this->model->findAll());
-        $data = $this->model->orderBy('id', 'asc')->findAll();
-        return $this->respond($data, 200);
+        $db      = \Config\Database::connect();
+        $builder = $db->table('users');
+$builder->select('users.id,nama,email,role,role_id'); 
+$builder->join('roles','roles.id=users.role_id');
+
+$query= $builder->get()->getResult();
+return $this->response->setJSON($query);
+    
     }
     
     public function update($id = null)
     {
         $data = $this->request->getRawInput();
-         
-		
+        
         $data['id'] = $id;
 
         $check_data = $this->model->where('id', $id)->find();

@@ -4,41 +4,27 @@ namespace App\Controllers;
 
 use CodeIgniter\RESTful\ResourceController;
 use CodeIgniter\API\ResponseTrait;
-use App\Models\UserModel;
-use Firebase\JWT\JWT;
+
+
+
 
 class Me extends ResourceController
 {
-	/**
-	 * Return an array of resource objects, themselves in array format
-	 *
-	 * @return mixed
-	 */
-	use ResponseTrait;
-	public function index()
-	{
-		$key = getenv('TOKEN_SECRET');
-		$header = $this->request->getServer('HTTP_AUTHORIZATION');
-		if(!$header) return $this->failUnauthorized('Token Required');
-		$token = explode(' ', $header)[1];
-		$User = new UserModel();
-		
+    use ResponseTrait;
 
-		try {
-			$decoded = JWT::decode($token, $key,$User['HS256']);
-			var_dump($decoded);die;
-			$response = [
-				'id' => $decoded->uid,
-				'email' => $decoded->email,
-				
-			];
-			
-			return $this->respond($response);
-		} catch (\Throwable $th) {
-			var_dump($th);die;
-			return $this->fail('Invalid Token');
-		}
-	}
-	//me masih error
+    protected $modelName = 'App\Models\UserModel';
+    protected $format    = 'json';
 
+    public function index()
+    {
+        // return $this->respond($this->model->findAll());
+        // $data = $this->model->orderBy('id', 'asc')->findAll();
+        // return $this->respond($data, 200);
+        $db      = \Config\Database::connect();
+        $builder = $db->table('users');
+$builder->select('nama,email,role_id'); 
+
+$query= $builder->get()->getResult();
+return $this->response->setJSON($query);
+    }
 }

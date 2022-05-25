@@ -9,7 +9,7 @@ use Firebase\JWT\JWT;
 
 class Checkin extends ResourceController
 {
-
+ 
     public function index(){
         $key = getenv('TOKEN_SECRET');
 		$header = $this->request->getServer('HTTP_AUTHORIZATION');
@@ -77,4 +77,6 @@ class Checkin extends ResourceController
 		}
 
     }
+
+    
 }
