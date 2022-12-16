@@ -22,7 +22,7 @@ class Auth extends ResourceController
         // return $this->respond($this->model->findAll());
         $db      = \Config\Database::connect();
         $builder = $db->table('users');
-$builder->select('users.id,nama,email,role,role_id'); 
+$builder->select('users.id,email,users.nama,roles.nama as jenis'); 
 $builder->join('roles','roles.id=users.role_id');
 
 $query= $builder->get()->getResult();

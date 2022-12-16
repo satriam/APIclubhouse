@@ -19,6 +19,27 @@ class Location extends ResourceController
 
     public function create()
     {
+        // $config['upload_path'] = './upload/';
+        // $config['allowed_types'] = 'gif|jpg|png';
+        // $config['max_size'] = 2000;
+ 
+ 
+        // $this->load->library('upload', $config);
+ 
+        // if (!$this->upload->do_upload('profile_pic')) 
+        // {
+        //     $error = array('error' => $this->upload->display_errors());
+ 
+        //     $this->load->view('imageupload_form', $error);
+        // } 
+        // else 
+        // {
+        //     $data = array('image_metadata' => $this->upload->data());
+ 
+        //     $this->load->view('imageupload_success', $data);
+        // }
+    
+ 
         $data = null;
         $data = $this->request->getRawInput();
 

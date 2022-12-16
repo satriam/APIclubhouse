@@ -41,7 +41,9 @@ class Login extends ResourceController
 			"nbf" => 1357000000,
 			"uid" => $user['id'],
 			"email" => $user['email'],
-			"password"=>$user['password']
+			"password"=>$user['password'],
+			"role_id"=>$user['role_id'],
+			"name"=>$user['nama']
 		);
 
 		$token = JWT::encode($payload, $key);
@@ -53,7 +55,9 @@ class Login extends ResourceController
 			"message" => "ok",
 			"token"=>$token,
 			"email" => $user['email'],
-			"role_id"=> $user['role_id']
+			"role_id"=> $user['role_id'],
+			"name"=>$user['nama'],
+			"no_pegawai"=>$user['nopeg']
 			]);
 	}
 

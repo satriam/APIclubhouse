@@ -1,0 +1,13 @@
+ERROR - 2022-12-03 02:37:57 --> mysqli_sql_exception: Column 'nama' in field list is ambiguous in C:\xampp7\htdocs\APIclubhouse\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp7\htdocs\APIclubhouse\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `nama`, ...', 0)
+#1 C:\xampp7\htdocs\APIclubhouse\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nama`, ...')
+#2 C:\xampp7\htdocs\APIclubhouse\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nama`, ...')
+#3 C:\xampp7\htdocs\APIclubhouse\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `nama`, ...', Array, false)
+#4 C:\xampp7\htdocs\APIclubhouse\app\Controllers\Me.php(39): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp7\htdocs\APIclubhouse\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Me->index()
+#6 C:\xampp7\htdocs\APIclubhouse\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Me))
+#7 C:\xampp7\htdocs\APIclubhouse\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp7\htdocs\APIclubhouse\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp7\htdocs\APIclubhouse\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp7\\htdoc...')
+#10 {main}
