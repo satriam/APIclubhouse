@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 21, 2022 at 04:23 PM
--- Server version: 10.4.22-MariaDB
--- PHP Version: 7.4.27
+-- Waktu pembuatan: 16 Des 2022 pada 01.08
+-- Versi server: 10.4.22-MariaDB
+-- Versi PHP: 8.1.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `checkin`
+-- Struktur dari tabel `checkin`
 --
 
 CREATE TABLE `checkin` (
@@ -35,57 +35,40 @@ CREATE TABLE `checkin` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `checkin`
+-- Dumping data untuk tabel `checkin`
 --
 
 INSERT INTO `checkin` (`id`, `lokasi_id`, `created_at`, `user_id`) VALUES
-(1, 1, '2022-03-09 09:19:03', 1),
-(2, 1, '2022-04-07 05:49:34', 2),
-(3, 2, '2022-04-07 12:14:00', 2),
-(4, 1, '2022-04-11 07:51:49', 2),
-(5, 1, '2022-04-11 07:51:54', 2),
-(6, 2, '2022-04-11 07:53:26', 2),
-(7, 2, '2022-04-11 08:11:37', 2),
-(8, 1, '2022-04-11 08:11:59', 2),
-(9, 1, '2022-04-11 08:12:40', 2),
-(10, 2, '2022-04-11 08:12:50', 2),
-(11, 2, '2022-04-11 08:13:08', 2),
-(12, 2, '2022-04-11 08:13:10', 2),
-(13, 2, '2022-05-11 02:30:52', 2),
-(14, 2, '2022-05-11 02:44:54', 2),
-(15, 2, '2022-05-11 02:48:40', 2),
-(16, 2, '2022-05-11 03:04:56', 2),
-(17, 2, '2022-05-11 03:05:30', 2),
-(18, 2, '2022-05-11 03:19:46', 2),
-(19, 2, '2022-05-11 03:26:30', 2),
-(20, 1, '2022-05-11 03:26:46', 2),
-(21, 1, '2022-05-11 12:33:30', 2),
-(22, 2, '2022-05-11 12:34:47', 2);
+(125, 1, '2022-12-04 16:17:07', 12),
+(146, 2, '2022-12-04 16:17:07', 12),
+(147, 1, '2022-12-05 21:13:54', 12),
+(148, 2, '2022-12-06 07:51:30', 12);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `locations`
+-- Struktur dari tabel `locations`
 --
 
 CREATE TABLE `locations` (
   `id` int(11) NOT NULL,
   `nama_lokasi` varchar(255) NOT NULL,
-  `kode` varchar(255) NOT NULL
+  `kode` varchar(255) NOT NULL,
+  `gambar` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `locations`
+-- Dumping data untuk tabel `locations`
 --
 
-INSERT INTO `locations` (`id`, `nama_lokasi`, `kode`) VALUES
-(1, 'pool townsite tanjung enim', 'abcd'),
-(2, 'biliard tanah putih', 'aabb');
+INSERT INTO `locations` (`id`, `nama_lokasi`, `kode`, `gambar`) VALUES
+(1, 'pool townsite tanjung enim', 'e2fc714c4727ee9395f324cd2e7f331f', 'https://img2.pngdownload.id/20180706/fyq/kisspng-laurel-municipal-swimming-pool-logo-west-laurel-sw-chicken-logo-5b3f200914a229.8630405415308636250845.jpg'),
+(2, 'biliard tanah putih', 'aabb', 'https://cdn1.localstartupfest.id/wp-content/uploads/1646/87/download-bola-billiard-.png.png');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `migrations`
+-- Struktur dari tabel `migrations`
 --
 
 CREATE TABLE `migrations` (
@@ -99,7 +82,7 @@ CREATE TABLE `migrations` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `migrations`
+-- Dumping data untuk tabel `migrations`
 --
 
 INSERT INTO `migrations` (`id`, `version`, `class`, `group`, `namespace`, `time`, `batch`) VALUES
@@ -108,7 +91,7 @@ INSERT INTO `migrations` (`id`, `version`, `class`, `group`, `namespace`, `time`
 -- --------------------------------------------------------
 
 --
--- Table structure for table `roles`
+-- Struktur dari tabel `roles`
 --
 
 CREATE TABLE `roles` (
@@ -117,17 +100,18 @@ CREATE TABLE `roles` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `roles`
+-- Dumping data untuk tabel `roles`
 --
 
 INSERT INTO `roles` (`id`, `nama`) VALUES
-(1, 'admin'),
-(2, 'user');
+(1, 'admin kolam'),
+(2, 'user'),
+(3, 'admin billiard');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `users`
+-- Struktur dari tabel `users`
 --
 
 CREATE TABLE `users` (
@@ -135,85 +119,98 @@ CREATE TABLE `users` (
   `email` varchar(100) NOT NULL,
   `password` varchar(200) NOT NULL,
   `nama` varchar(255) NOT NULL,
-  `role_id` int(11) NOT NULL
+  `role_id` int(11) NOT NULL,
+  `nopeg` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `users`
+-- Dumping data untuk tabel `users`
 --
 
-INSERT INTO `users` (`id`, `email`, `password`, `nama`, `role_id`) VALUES
-(1, 'satt@gmail.com', 'admin1234', 'satria', 1),
-(2, 'satt1@gmail.com', 'admin1234', 'satria', 2),
-(3, '', 'admin1234', 'satria', 0);
+INSERT INTO `users` (`id`, `email`, `password`, `nama`, `role_id`, `nopeg`) VALUES
+(11, 'satt1@gmail.com', '$2y$10$jH6yp.z6ybBd74.p.e3NQ.HRKCBNU2pYsmZ83LPYnmoV4Pu5HtrLe', 'admin satt', 1, '28019'),
+(12, 'satt11@gmail.com', '$2y$10$DxweD5HnQhEpjD.gk7VVu.sxZ2lcbRiZplR3APHlbPgfpx0Yfv3Tm', 'satria', 2, '444154');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `checkin`
+-- Indeks untuk tabel `checkin`
 --
 ALTER TABLE `checkin`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `fk_lokasi` (`lokasi_id`),
+  ADD KEY `fk_user` (`user_id`);
 
 --
--- Indexes for table `locations`
+-- Indeks untuk tabel `locations`
 --
 ALTER TABLE `locations`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `migrations`
+-- Indeks untuk tabel `migrations`
 --
 ALTER TABLE `migrations`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `roles`
+-- Indeks untuk tabel `roles`
 --
 ALTER TABLE `roles`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `users`
+-- Indeks untuk tabel `users`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `checkin`
+-- AUTO_INCREMENT untuk tabel `checkin`
 --
 ALTER TABLE `checkin`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=149;
 
 --
--- AUTO_INCREMENT for table `locations`
+-- AUTO_INCREMENT untuk tabel `locations`
 --
 ALTER TABLE `locations`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT for table `migrations`
+-- AUTO_INCREMENT untuk tabel `migrations`
 --
 ALTER TABLE `migrations`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `roles`
+-- AUTO_INCREMENT untuk tabel `roles`
 --
 ALTER TABLE `roles`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT for table `users`
+-- AUTO_INCREMENT untuk tabel `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+
+--
+-- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
+--
+
+--
+-- Ketidakleluasaan untuk tabel `checkin`
+--
+ALTER TABLE `checkin`
+  ADD CONSTRAINT `fk_lokasi` FOREIGN KEY (`lokasi_id`) REFERENCES `locations` (`id`),
+  ADD CONSTRAINT `fk_user` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
