@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 16 Des 2022 pada 01.08
+-- Waktu pembuatan: 05 Jan 2023 pada 17.28
 -- Versi server: 10.4.22-MariaDB
 -- Versi PHP: 8.1.1
 
@@ -41,8 +41,10 @@ CREATE TABLE `checkin` (
 INSERT INTO `checkin` (`id`, `lokasi_id`, `created_at`, `user_id`) VALUES
 (125, 1, '2022-12-04 16:17:07', 12),
 (146, 2, '2022-12-04 16:17:07', 12),
-(147, 1, '2022-12-05 21:13:54', 12),
-(148, 2, '2022-12-06 07:51:30', 12);
+(147, 1, '2022-12-29 16:59:21', 11),
+(148, 2, '2022-12-06 07:51:30', 12),
+(149, 1, '2022-12-29 17:02:09', 11),
+(150, 1, '2022-12-30 01:22:04', 12);
 
 -- --------------------------------------------------------
 
@@ -62,7 +64,7 @@ CREATE TABLE `locations` (
 --
 
 INSERT INTO `locations` (`id`, `nama_lokasi`, `kode`, `gambar`) VALUES
-(1, 'pool townsite tanjung enim', 'e2fc714c4727ee9395f324cd2e7f331f', 'https://img2.pngdownload.id/20180706/fyq/kisspng-laurel-municipal-swimming-pool-logo-west-laurel-sw-chicken-logo-5b3f200914a229.8630405415308636250845.jpg'),
+(1, 'pool townsite tanjung enim', 'abcd', 'https://img2.pngdownload.id/20180706/fyq/kisspng-laurel-municipal-swimming-pool-logo-west-laurel-sw-chicken-logo-5b3f200914a229.8630405415308636250845.jpg'),
 (2, 'biliard tanah putih', 'aabb', 'https://cdn1.localstartupfest.id/wp-content/uploads/1646/87/download-bola-billiard-.png.png');
 
 -- --------------------------------------------------------
@@ -175,7 +177,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT untuk tabel `checkin`
 --
 ALTER TABLE `checkin`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=149;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=151;
 
 --
 -- AUTO_INCREMENT untuk tabel `locations`
