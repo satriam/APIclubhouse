@@ -74,16 +74,7 @@ return $this->response->setJSON($query);
         $header = $this->request->getServer('HTTP_AUTHORIZATION');
 		if(!$header) return $this->failUnauthorized('Token Required');
 		$token = explode(' ', $header)[1];
-        // var_dump($token);die;
-
-        //SELECT id,created_at FROM checkin where DAY(created_at)=DAY(NOW());
-        //   $builder = $db->table('checkin');
-        //         $builder ->select('created_at,user_id');
-        //         $builder ->where ('DAY(created_at)=DAY(NOW())');
-        //         $created_at = $builder->get()->getResult();
-                
-               
-       
+      
 		try {
             
 		$decoded = JWT::decode($token, $key, ['HS256']);

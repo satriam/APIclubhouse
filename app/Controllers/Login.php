@@ -54,7 +54,7 @@ class Login extends ResourceController
 			"status" => 200,
 			"message" => "ok",
 			"token"=>$token,
-			"email" => $user['email'],
+			// "email" => $user['email'],
 			"role_id"=> $user['role_id'],
 			"name"=>$user['nama'],
 			"no_pegawai"=>$user['nopeg']
